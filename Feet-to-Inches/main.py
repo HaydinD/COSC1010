@@ -1,7 +1,15 @@
 #
-# Name
-# Date
+# Haydin Davis
+# 9/24
 # Feet to Inches Programming Project
 # COSC 2409 DNT
-#
-# Use comments liberally throughout the program.
+IN_PER_FT=12
+
+def main():
+    feet=int(input('Enter a number of feet: '))
+    print(feet, 'equals', ft_to_in(feet),'inches.')
+
+def ft_to_in(feet):
+    return feet*IN_PER_FT
+
+main()
