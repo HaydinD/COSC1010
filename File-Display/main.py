@@ -4,10 +4,9 @@
 # File Display Programming Project
 # COSC 2409 DNT
 #
-myfile=open('numbesr.txt','r')
-
-for line in myfile:
-    number=int(line)
-    print(number)
-
-myfile.close()
+def main():
+    contents=''
+    infile=open('number.txt','r')
+    contents=infile.read()
+    print(contents)
+main()
