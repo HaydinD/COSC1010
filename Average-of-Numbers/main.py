@@ -4,10 +4,10 @@
 # Average of Numbers Programming Project
 # COSC 2409 DNT
 #
-with open("numbers.tx","w+") as file:
-    content = file.read()
-num1=22
-num2=1 
-num3=-99
-average= (num1+num2+num3)/3
-print(average)
+def main():
+    contents=''
+    infile=open('number.txt','r')
+    contents=infile.read()
+    average=contents/3
+    print(average)
+main()
