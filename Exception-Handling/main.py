@@ -1,7 +1,27 @@
 #
-# Name
-# Date
-# Exception Handling Programming Project
+# Haydin Davis
+# 10/24
+# Exeptional Handling
 # COSC 2409 DNT
 #
-# Use comments liberally throughout the program. 
+
+def main():
+    try:
+        total=0
+        infile=open('number.txt','r')
+        lines=0
+        contents=lines.readline()
+
+        while contents != "":
+            lines+=1
+            total+=int(contents)
+            contents=lines.readline()
+        
+        average=total/lines
+    except IOError:
+        print("An IOError ocurred")
+    except ValueError:
+        print("A ValueError ocurred")
+    else:
+        print("average is", average)
+main()
