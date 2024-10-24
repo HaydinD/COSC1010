@@ -1,13 +1,21 @@
 #
 # Haydin Davis
 # 10/17
-# Average of Numbers Programming Project
+# Average of Numbers
 # COSC 2409 DNT
 #
+
 def main():
-    contents=''
+    total=0
     infile=open('number.txt','r')
-    contents=infile.read()
-    average=contents/3
-    print(average)
+    lines=0
+    contents=lines.readline()
+
+    while contents != "":
+        lines+=1
+        total+=int(contents)
+        contents=lines.readline()
+    
+    average=total/lines
+    print("average is", average)
 main()
